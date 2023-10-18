@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#gameboard{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+   
+}
+.paddle{
+    width: 20px;
+    height: 100px;
+    /* border-radius: 10px; */
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+#paddle_1{
+    background-color: gold;
+    
+}
+#paddle_2{
+    background-color: blue;
+    right: 5px;
+
+}
+#line{
+    /* width: 1px; */
+    height: 100vh;
+    border: 3px dashed #b5afaf;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#player1Score{
+    color: aliceblue;
+    position: absolute;
+    left: 40%;
+    font-size: 50px;
+    padding: 10px;
+}
+#player2Score{
+    color: aliceblue;
+    position: absolute;
+    right: 40%;
+    font-size: 50px;
+    padding: 10px;
+}
+#ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
